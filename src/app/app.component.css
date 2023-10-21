@@ -1,0 +1,116 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid;
+  transition: all 0.5s;
+  border-radius: 8px;
+}
+
+.counter-section {
+  width: 100%;
+  height: 20em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  width: 15%;
+}
+
+.border-radius-left {
+  border-radius: 5px 0 0 5px;
+}
+
+.border-radius-right {
+  border-radius: 0 5px 5px 0;
+}
+
+.button-section {
+  width: 35%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.button {
+  font-weight: 400;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+  width: 100%;
+  background-color: purple;
+  color: white;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.2em;
+}
+
+.action-button {
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.value {
+  color: black;
+  background-color: bisque;
+  padding: auto 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.radius {
+  border-radius: 5px;
+}
+
+.action-button:hover,
+.button:hover {
+  background-color: rgb(3, 3, 95);
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    width: 70%;
+  }
+}
